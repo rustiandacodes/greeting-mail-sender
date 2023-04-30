@@ -10,8 +10,3 @@ export const transporter = nodemailer.createTransport({
     pass: pass,
   },
 });
-
-export const mailOption = {
-  from: email,
-  to: email,
-};

@@ -1,4 +1,4 @@
-import { sendContactForm } from '@/lib/api';
+import { sendContactForm, sendContactFormToDB } from '@/lib/api';
 import { useState } from 'react';
 
 import Header from '@/components/Header';
@@ -35,7 +35,8 @@ export default function Home() {
       setShowAlert(false);
     }, 3000);
 
-    await sendContactForm(data);
+    await sendContactFormToDB(data);
+    // await sendContactForm(data);
   };
 
   return (
