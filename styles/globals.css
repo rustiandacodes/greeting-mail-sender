@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-good-bg-grey-darker relative;
+}
+
+.input-style {
+  @apply w-full rounded-md bg-good-field text-white p-2 focus:outline-none focus:ring-2 border-2 border-good-ring-pasive focus:ring-good-ring-active placeholder:text-good-ring-pasive focus:placeholder:text-slate-100  invalid:text-red-600 focus:invalid:border-red-500 focus:invalid:ring-red-500;
+}
+
+.form-label {
+  @apply text-xl font-semibold text-good-label;
+}
