@@ -36,7 +36,7 @@ export default function Home() {
     }, 3000);
 
     await sendContactFormToDB(data);
-    // await sendContactForm(data);
+    await sendContactForm(data);
   };
 
   return (
